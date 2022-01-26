@@ -1,0 +1,13 @@
+<!doctype html>
+<!--
+	____________ _____ _   __  
+	|  ___| ___ \_   _| | / /  
+	| |_  | |_/ / | | | |/ /   
+	|  _| | ___ \ | | |    \   
+	| |   | |_/ /_| |_| |\  \_ 
+	\_|   \____/ \___/\_| \_(_)
+
+	Copyright 2021 FBIK.
+	未经允许禁止修改源码，网页作者享有追究一切责任的权利.
+-->
+<html><head><meta charset="UTF-8"><title>中考倒计时</title><link rel="stylesheet"href="./css/mdui.min.css"/><script>function countTime(){var date=new Date();var now=date.getTime();var str="2022/6/20 00:00:00";var endDate=new Date(str);var end=endDate.getTime();var leftTime=end-now;var d,h,m,s;if(leftTime>=0){d=Math.floor(leftTime/1000/60/60/24);h=Math.floor(leftTime/1000/60/60%24);m=Math.floor(leftTime/1000/60%60);s=Math.floor(leftTime/1000%60)}document.getElementById("_d").innerHTML=d+"天";document.getElementById("_h").innerHTML=h+"小时";document.getElementById("_m").innerHTML=m+"分钟";document.getElementById("_s").innerHTML=s+"秒";setTimeout(countTime,1000)}</script><style type="text/css">.countdown{font-size:125px}.title{font-size:85px}.text{font-size:40px}.footer{font-size:30px}div{text-align:center}</style></head><body class="mdui-theme-accent-orange mdui-theme-layout-auto"onload="countTime()"><div><br><br><br><div class="mdui-divider"></div><center><div class="title mdui-typo">中考倒计时</div></center><div class="mdui-divider"></div><center><p class="text mdui-typo">距离中考还剩</p><b class="countdown mdui-typo"><span id="_d">00</span><span id="_h">00</span><span id="_m">00</span><span id="_s">00</span></b></center></div></body><br><center><br><p class="footer mdui-typo">*注:以广州2022年中考日期——6月20日设置</p></center></html>
