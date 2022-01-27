@@ -23,10 +23,10 @@ function countTime() {
     }
     //将倒计时赋值到span中
     //set countdown to the "<span>"
-    document.getElementById("_d").innerHTML = d + "day";
-    document.getElementById("_h").innerHTML = h + "h";
-    document.getElementById("_m").innerHTML = m + "min";
-    document.getElementById("_s").innerHTML = s + "s";
+    document.getElementById("_d").innerHTML = d;
+    document.getElementById("_h").innerHTML = h;
+    document.getElementById("_m").innerHTML = m;
+    document.getElementById("_s").innerHTML = s;
     //递归每秒调用countTime方法，显示动态时间效果
     //Call the countTime method recursively every second to display the dynamic time effect  
     setTimeout(countTime, 1000);
