@@ -43,10 +43,10 @@ $ wget http://fbik.top/Countdown-Timer/countdown-timer.js
 
 修改倒计时日期与时间.
 
-在`countdown-timer.js`里修改`str`变量为倒计时日期与时间:
+在`countdown-timer.js`里修改`str`变量为倒计时日期与时间, 以下为设置成2022年6月26日0时0分的示范:
 
 ~~~JavaScript
-var str = "2022/6/20 00:00:00";
+var str = "2022/6/26 00:00:00";
 ~~~
 
 在网页中引入`countdown-timer.js`. 以下为`countdown-timer.js`在根目录时的引入示范:
