@@ -5,7 +5,7 @@ function countTime() {
     var now = date.getTime();
     //设置截止时间  
     //set time of death
-    var str = "2022/6/20 00:00:00";
+    var str = "2222/2/2 00:00:00";
     var endDate = new Date(str);
     var end = endDate.getTime();
 
