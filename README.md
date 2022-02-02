@@ -4,6 +4,8 @@
 
 这是一个使用JavaScript编写的倒计时器, 适用于HTML等网页.
 
+示范站点: <https://countdown-timer.fbik.top/>
+
 ## 目录
 1. [仓库内容](#仓库内容)
 2. [获取](#获取)
@@ -23,7 +25,7 @@ main分支:
 
 example分支:
 
-example文件夹下的页面是我制作的一个示范, [这是该页面的链接](https://fbik.top/Countdown-Timer/example/).
+example文件夹下的页面是我制作的一个示范, 及我的倒计时站点的源代码. [这是该页面的链接](https://fbik.top/Countdown-Timer/example/).
 
 ## 获取
 
