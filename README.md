@@ -35,8 +35,13 @@ example文件夹下的页面是我制作的一个示范, 及我的倒计时站�
 $ git clone https://github.com/bovinebeta/Countdown-Timer
 ~~~
 
-你可以直接通过浏览器从该仓库的[Github Page](http://repo.fbik.top/Countdown-Timer/countdown-timer.js)将`countdown-timer.js`保存至设备, 或使用`wget`获取.
+你可以直接通过浏览器从该仓库的[Github Page](http://repo.fbik.top/Countdown-Timer/countdown-timer.js)将`countdown-timer.js`保存至设备.
 
+你可以使用`curl`或`wget`从该仓库的[Github Page](http://repo.fbik.top/Countdown-Timer/countdown-timer.js)获取.
+
+~~~terminal
+$ curl http://repo.fbik.top/Countdown-Timer/countdown-timer.js
+~~~
 ~~~terminal
 $ wget http://repo.fbik.top/Countdown-Timer/countdown-timer.js
 ~~~
