@@ -62,6 +62,14 @@ var str = "2022/6/26 00:00:00";
 <script src="./countdown-timer.js"></script>
 ~~~
 
+在网页中启动函数
+~~~HTML
+<script>countTime()</script>
+~~~
+~~~HTML
+<body onload="countTime()">......</body>
+~~~
+
 在网页中, 在欲显示天数的位置添加:
 ~~~HTML
 <span id="_d"></span>
