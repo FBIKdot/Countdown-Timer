@@ -21,7 +21,7 @@ main分支:
 | `index.html` | HTML网页文件 | 这是一个网页引入示范 |
 | `countdown-timer.js` | JavaScript语言文件 | Countdown-Timer本体 |
 | `countdown-timer.easy.js` | JavaScript语言文件 | 为了方便使用的`countdown-timer.js`简化版 |
-| LICENSE | 文件 | 开源许可证 |
+| LICENSE | 文件 | ~~有等于没有的~~开源许可证 |
 | README.md | markdown文本 | 自述文件 |
 
 example分支:
@@ -64,4 +64,4 @@ var str = "2022/6/26 00:00:00";
 ~~~HTML
 <body onload="cTimer()">......</body>
 ~~~
-> 原因是因为函数执行时id属性为`cTimer`的标签没有加载会导致没法修改dom
+> 原因是因为函数执行时id属性为`cTimer`的标签没有加载会导致没法修改dom. 
