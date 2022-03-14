@@ -4,12 +4,13 @@
 
 这是一个使用JavaScript编写的倒计时器, 适用于HTML等网页.
 
-示范站点: <https://countdown-timer.fbik.top/>
+Github Pages:<https://repo.fbik.top/Countdown-Timer/>
+
+使用示范站点: <https://countdown-timer.fbik.top/>
 
 ## 目录
 1. [仓库内容](#仓库内容)
-2. [获取](#获取)
-3. [使用方法](#使用方法)
+2. [使用方法](#使用方法)
 
 ## 仓库内容
 
@@ -27,34 +28,8 @@ example分支:
 
 example文件夹下的页面是我制作的一个示范, 及我的倒计时站点的源代码. [这是该页面的链接](https://repo.fbik.top/Countdown-Timer/example/).
 
-## 获取
-
-你可以通过`git`获取整个仓库.
-
-~~~terminal
-$ git clone https://github.com/bovinebeta/Countdown-Timer
-~~~
-
-你可以直接通过浏览器从该仓库的[Github Page](http://repo.fbik.top/Countdown-Timer/countdown-timer.js)将`countdown-timer.js`保存至设备.
-
-你可以使用`curl`或`wget`从该仓库的[Github Page](http://repo.fbik.top/Countdown-Timer/countdown-timer.js)获取.
-
-~~~terminal
-$ curl http://repo.fbik.top/Countdown-Timer/countdown-timer.js
-~~~
-~~~terminal
-$ wget http://repo.fbik.top/Countdown-Timer/countdown-timer.js
-~~~
 
 ## 使用方法
-
-修改倒计时日期与时间.
-
-在`countdown-timer.js`里修改`str`变量为倒计时日期与时间, 以下为设置成2022年6月26日0时0分的示范:
-
-~~~JavaScript
-var str = "2022/6/26 00:00:00";
-~~~
 
 在网页中引入`countdown-timer.js`. 以下为`countdown-timer.js`在根目录时的引入示范:
 
@@ -62,31 +37,31 @@ var str = "2022/6/26 00:00:00";
 <script src="./countdown-timer.js"></script>
 ~~~
 
-在网页中启动函数
-~~~HTML
-<script>countTime()</script>
-~~~
-~~~HTML
-<body onload="countTime()">......</body>
+修改倒计时日期与时间.
+
+第一种方法是直接在网页中给`str`赋值, 以下为设置成2022年6月26日0时0分的示范:
+~~~html
+<script>var str = "2022/6/26 00:00:00";</script>
 ~~~
 
-在网页中, 在欲显示天数的位置添加:
-~~~HTML
-<span id="_d"></span>
+第二种方法是在`countdown-timer.js`里修改`str`所赋的值为倒计时日期与时间, 以下为设置成2022年6月26日0时0分的示范:
+
+~~~JavaScript
+var str = "2022/6/26 00:00:00";
 ~~~
 
-在网页中, 在欲显示小时的位置添加:
+在网页中, 在欲显示天数的标签添加id属性`cTimer`:
 ~~~HTML
-<span id="_h"></span>
+<span id="cTimer"></span>
 ~~~
 
-在网页中, 在欲显示分钟的位置添加:
-~~~HTML
-<span id="_m"></span>
-~~~
+在网页的末尾中用`<script>`启动函数, 具体是在id属性为`cTimer`的标签段之后.
 
-在网页中, 在欲显示秒的位置添加:
 ~~~HTML
-<span id="_s"></span>
+<script>cTimer();</script>
 ~~~
-
+或者使用给id为`cTimer`的标签或这个标签的父级标签添加`onload`属性.
+~~~HTML
+<body onload="cTimer()">......</body>
+~~~
+> 原因是因为函数执行时id属性为`cTimer`的标签没有加载会导致没法修改dom
