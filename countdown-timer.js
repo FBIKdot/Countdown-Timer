@@ -21,9 +21,9 @@ function cTimer() {
         h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
         m = Math.floor(leftTime / 1000 / 60 % 60);
         s = Math.floor(leftTime / 1000 % 60);
-    }
+    };
     //修改dom
     document.getElementById("cTimer").innerHTML = d + "day&nbsp;" + h + "h&nbsp;" + m + "min&nbsp" + s + "s";
     //递归. 每秒调用countTime来显示动态时间效果
     setTimeout("cTimer()", 1000);
-}
+};
