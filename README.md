@@ -8,25 +8,7 @@ Github Pages:<https://repo.fbik.top/Countdown-Timer/>
 
 我使用`Countdown-Timer`制作的倒计时网站: <https://countdown-timer.fbik.top/>
 
-## 目录
-1. [仓库内容](#仓库内容)
-2. [使用方法](#使用方法)
-
-## 仓库内容
-
-main分支:
-
-| 文件名 | 类型 | 内容 |
-| :---- | :---- | :---- |
-| `index.html` | HTML网页文件 | 这是一个网页引入示范 |
-| `countdown-timer.js` | JavaScript语言文件 | Countdown-Timer本体 |
-| `countdown-timer.easy.js` | JavaScript语言文件 | 为了方便使用的`countdown-timer.js`简化版 |
-| LICENSE | 文件 | ~~有等于没有的~~开源许可证 |
-| README.md | markdown文本 | 自述文件 |
-
-example分支:
-
-example文件夹下的页面是我制作的一个示范, 及我的倒计时网站的源代码. [这是该页面的链接](https://repo.fbik.top/Countdown-Timer/example/).
+example分支下的页面是我制作的一个示范, 及我的倒计时网站的源代码. [这是该页面的链接](https://repo.fbik.top/Countdown-Timer/example/).
 
 
 ## 使用方法
@@ -64,4 +46,3 @@ var str = "2022/6/26 00:00:00";
 ~~~HTML
 <body onload="cTimer()">......</body>
 ~~~
-> 原因是因为函数执行时id属性为`cTimer`的标签没有加载会导致没法修改dom. 
