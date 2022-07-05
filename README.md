@@ -6,10 +6,7 @@
 
 Github Pages:<https://repo.fbik.top/Countdown-Timer/>
 
-我使用`Countdown-Timer`制作的倒计时网站: <https://countdown-timer.fbik.top/>
-
-example分支下的页面是我制作的一个示范, 及我的倒计时网站的源代码. [这是该页面的链接](https://repo.fbik.top/Countdown-Timer/example/).
-
+`Countdown-Timer`示范:我使用制作的倒计时网站: <https://countdown-timer.fbik.top/>
 
 ## 使用方法
 
